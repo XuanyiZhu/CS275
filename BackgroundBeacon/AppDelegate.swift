@@ -12,14 +12,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate {
 
     var window: UIWindow?
-
-    let notificationManager = NotificationManager()
     
     let beaconManager = ESTBeaconManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         ESTConfig.setupAppID("backgroundbeacon-n8z", andAppToken: "623e6e6bf0611278a7d042b262e55a43")
-//        self.notificationManager.enableNotifications(deviceIdentifier: "0f61097c46e1d1b6c5cfaa35cb89c20d", enterMessage: "Hello, world! ✌️", exitMessage: "Goodbye! 👋")
         
         // Override point for customization after application launch.
         self.beaconManager.delegate = self
@@ -28,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
         self.beaconManager.startMonitoring(for: CLBeaconRegion(
             proximityUUID: UUID(uuidString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
             major: 45268, minor: 1, identifier: "0f61097c46e1d1b6c5cfaa35cb89c20d"))
-       
         return true
     }
     

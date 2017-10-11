@@ -12,7 +12,6 @@
 		083682CE1F8D49CB0050F043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083682CC1F8D49CB0050F043 /* Main.storyboard */; };
 		083682D01F8D49CB0050F043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 083682CF1F8D49CB0050F043 /* Assets.xcassets */; };
 		083682D31F8D49CB0050F043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 083682D11F8D49CB0050F043 /* LaunchScreen.storyboard */; };
-		084D00591F8D69FD00999A23 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D00581F8D69FD00999A23 /* NotificationManager.swift */; };
 		280C58A6C2532B9621B13A2A /* Pods_BackgroundBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FE38F9362ABC0211C18018 /* Pods_BackgroundBeacon.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +24,6 @@
 		083682D21F8D49CB0050F043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		083682D41F8D49CC0050F043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		083682DE1F8D4A6F0050F043 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
-		084D00581F8D69FD00999A23 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		38FE38F9362ABC0211C18018 /* Pods_BackgroundBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BackgroundBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B57C57E74E6600D75F4BDC0 /* Pods-BackgroundBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackgroundBeacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-BackgroundBeacon/Pods-BackgroundBeacon.release.xcconfig"; sourceTree = "<group>"; };
 		6C0DA968968C11CAFFAA3616 /* Pods-BackgroundBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BackgroundBeacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BackgroundBeacon/Pods-BackgroundBeacon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				083682D11F8D49CB0050F043 /* LaunchScreen.storyboard */,
 				083682D41F8D49CC0050F043 /* Info.plist */,
 				083682DE1F8D4A6F0050F043 /* ObjCBridge.h */,
-				084D00581F8D69FD00999A23 /* NotificationManager.swift */,
 			);
 			path = BackgroundBeacon;
 			sourceTree = "<group>";
@@ -219,7 +216,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				084D00591F8D69FD00999A23 /* NotificationManager.swift in Sources */,
 				083682CB1F8D49CB0050F043 /* ViewController.swift in Sources */,
 				083682C91F8D49CB0050F043 /* AppDelegate.swift in Sources */,
 			);
