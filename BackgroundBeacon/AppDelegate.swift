@@ -40,17 +40,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
 //        }
 //    }
     
-//    func beaconManager(_ manager: Any, didExit region: CLBeaconRegion) {
-//        print ("yea")
-//        let notification = UILocalNotification()
-//        notification.alertBody = " exit Range "
-//        UIApplication.shared.presentLocalNotificationNow(notification)
-//    }
+    func beaconManager(_ manager: Any, didExitRegion region: CLBeaconRegion) {
+        print ("Exit " , region.identifier)
+        let notification = UILocalNotification()
+        notification.alertBody = " exit Range \(region.identifier)"
+        UIApplication.shared.presentLocalNotificationNow(notification)
+    }
     
     func beaconManager(_ manager: Any, didEnter region: CLBeaconRegion) {
-        print ("yea")
+        print ("enter", region.identifier)
         let notification = UILocalNotification()
-        notification.alertBody = " Enter Range "
+        notification.alertBody = " Enter Range \(region.identifier)"
         UIApplication.shared.presentLocalNotificationNow(notification)
     }
 
